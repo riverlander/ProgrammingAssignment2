@@ -33,3 +33,11 @@ cacheSolve <- function(x, ...) {
   x$setinverse(p)
   p
 }
+
+## you can test the code with next example from forum:
+## https://www.coursera.org/learn/r-programming/discussions/weeks/3/threads/ePlO1eMdEeahzg7_4P4Vvg
+m1 <- matrix(c(1/2, -1/4, -1, 3/4), nrow = 2, ncol = 2)
+m1
+solve(m1)
+myMatrix_object <- makeCacheMatrix(m1)
+cacheSolve(myMatrix_object)
